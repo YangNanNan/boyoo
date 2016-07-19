@@ -1,0 +1,523 @@
+body,div,ul,li,ol,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,a,img,span,input,table,tr,th,td,b,i,em,strong,font,form,big,small,label,select,textarea,caption{
+    margin: 0;
+    padding: 0;
+    /*line-height: 0;*/
+    /*line-height 不是必写的*/
+    font-family: "Microsoft YaHei", simSum;
+}
+img,input{
+    border: none;
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.clear{
+    clear: both;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+}
+.w1000{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.header{
+    width: 100%;
+    /*浏览器的可视窗口*/
+    min-width: 1000px;
+    /*最小宽度=版心的宽度*/
+    height: 58px;
+    background-color: #191d3a;
+}
+.logo{
+    float: left;
+    padding: 0 47px 0 20px;
+}
+.logo img{
+    width: 158px;
+    height: 58px;
+}
+.nav a{
+    float: left;
+    border-right: 1px solid #252947;
+    width: 85px;
+    height: 58px;/*可写可不写*/
+    line-height: 58px;
+    text-align: center;
+    font-size: 14px;
+    color: #818496;
+}
+.nav .home{
+    background-color: #252947;
+    color: #e2e4ed;
+}
+.nav a:hover{
+    color: #e2e4ed;
+}
+.header .join{
+    display: block;
+    float: right;
+    border: 1px solid #3aca7a;
+    border-radius: 3px;
+    margin: 12px 20px 0 0;
+    width: 100px;
+    height: 34px;
+    background-color: #38b774;
+    line-height: 34px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+}
+/**{
+    !*css的书写顺序*!
+    display: block;
+    !*元素的属性*!
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin: auto;
+    border: none;
+    padding: inherit;
+    width: inherit;
+    height: inherit;
+    vertical-align: inherit;
+    font: inherit;
+    text-align: inherit;
+    line-height: inherit;
+    color: inherit;
+    ... ...
+    !*inherit 继承上一级元素的css属性*!
+}*/
+/*header end*/
+.banner{
+    position: relative;
+    /*是下面按钮的参照物 在这个盒子中 永远靠下 居中显示*/
+    width: 100%;
+    min-width: 1000px;
+    height: 465px;
+}
+.banner ul .banner1{
+    display: none;
+    height: 465px;
+    background: url("../images/probanner1.jpg") no-repeat top center;
+}
+.banner ul .on{
+    display: block;
+}
+.banner .btn{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    margin-left: -50px;
+    width: 100px;
+    height: 12px;
+    /*background: #4ba4ac;*/
+}
+.banner ol{
+    margin-left: -15px;
+}
+.banner ol li{
+    float: left;
+    margin-left: 15px;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    cursor:pointer;
+    background: rgba(255,255,255,.7);
+}
+.banner ol .on{
+    background: rgba(255,255,255,1);
+}
+
+/*banner end*/
+.imgList{
+    overflow: hidden;
+    padding-top: 50px;
+    height: 285px;
+}
+.imgList .listTop{
+    /*position: relative;*/
+    width: 1044px;
+    overflow: hidden;
+}
+.imgList .listTop ul li{
+    float: left;
+    margin-right: 43px;
+    width: 218px;
+    height: 194px;
+}
+.imgList .listTop img{
+    width: 218px;
+    height: 130px;
+}
+.imgList .listTop h5{
+    padding: 15px 0 13px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #444866;
+}
+.imgList .listTop p{
+    text-align: center;
+    font-size: 12px;
+    color: #38b774;
+    line-height: 12px;
+}
+.imgList .listTop p b{
+    margin-left: 5px;
+    vertical-align: middle;
+    font-size: 0;
+    border: 4px solid #38b774;
+    border-color: transparent transparent transparent #38b774;
+}
+.imgList .listTop a:hover{
+    display: block;
+    height: 194px;
+    background: #38b774;
+    opacity: 0.8;
+    transition: all 0.3s linear 0s;
+    /*
+    css3的属性
+     all 要操作的属性
+     0.2s 发生运动的时间
+     linear 线性运动
+     0s    延迟的时间
+     */
+}
+.imgList .listTop a:hover h5,.imgList .listTop a:hover span,.imgList .listTop a:hover b{
+    color: #ffffff;
+    border-color: transparent transparent transparent #ffffff;
+}
+.listBtn{
+    margin-top: 30px;
+    border-top: 1px solid #cccccc;
+}
+.listBtn ul{
+    padding-left: 14px;
+    margin: -5px auto 0;
+    width: 106px;
+    height: 11px;
+    background: #ffffff;
+}
+.listBtn ul li{
+    float: left;
+    margin-right: 14px;
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    cursor:pointer;
+    background: #b5c0cb;
+}
+.listBtn ul .on{
+    background: #0c8f44;
+}
+.newsList{
+    width: 100%;
+    min-width: 1000px;
+    height: 367px;
+    background: url("../images/indexmainbg.jpg") no-repeat top center;
+}
+.newsList .newsL,.newsList .newsR{
+    float: left;
+    width: 500px;
+    height: 310px;
+}
+.newsList .newsL{
+    background: url("../images/bynewsbg.jpg") no-repeat;
+}
+.newsList .newsL .title{
+    padding: 40px 0 0 218px;
+    height: 80px;
+}
+.newsList .newsL .title a{
+    display: block;
+    border: 1px solid #33b972;
+    border-radius: 3px;
+    width: 64px;
+    height: 26px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+    color: #33b972;
+}
+.newsList .newsL .title a:hover{
+    background: #33b972;
+    color: #ffffff;
+    transition: all 0.3s linear 0s;
+}
+.newsList .newsL ul{
+    padding: 0 20px;
+}
+.newsList .newsL ul li{
+    height: 47px;
+    line-height: 47px;
+    border-bottom: 1px solid #cccccc;
+}
+.newsList .newsL ul li span{
+    padding-right: 10px;
+    font-size: 10px;
+    color: #afbecf;
+}
+.newsList .newsL ul li a{
+    color: #444866;
+    font-size: 14px;
+}
+.newsList .newsL ul li a:hover{
+    color: #0cc65b;
+}
+.newsR{
+    background: url("../images/byhrbg3.jpg") no-repeat;
+}
+.newsR .title{
+    padding: 40px 0 0 80px;
+    height: 74px;
+}
+.newsR .title h4{
+    float: left;
+    font-size: 28px;
+    color: #ffffff;
+    line-height: 30px;
+}
+.newsR .title h4 p{
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.newsR .title a{
+    display: block;
+    float: left;
+    margin-left: 27px;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    width: 64px;
+    height: 26px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+    color: #ffffff;
+}
+.newsList .newsR .title a:hover{
+    background: #ffffff;
+    color: #33b972;
+    transition: all 0.3s linear 0s;
+}
+.newsList .newsR h6{
+    padding-left: 20px;
+    height: 17px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.newsList .newsR ul{
+    padding-left: 20px;
+    width: 305px;
+}
+.newsList .newsR ul li{
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid #6fdea3;
+    font-size: 14px;
+    /*color: #ffffff;*/
+}
+.newsList .newsR ul li a{
+    color: #ffffff;
+}
+/*end*/
+.footer{
+    width: 100%;
+    min-width: 1000px;
+    height: 92px;
+    line-height: 92px;
+    background: #191d3a;
+    color: #6c6e7e;
+    font-size: 12px;
+}
+.footer span{
+    line-height: 92px;
+}
+/*继承 0.1  被全局清除默认样式的标签选择器 覆盖掉了*/
+.footer a{
+    padding: 0 5px;
+    color: #6c6e7e;
+}
+.footer a:hover{
+    color: #ffffff;
+}
+.footer img{
+    width: 36px;
+    height: 50px;
+}
+.footer .right{
+    padding-left: 160px;
+}
+.info{
+    position: relative;
+    margin: 0 auto;
+    padding: 75px 0 0 550px;
+    width: 450px;
+}
+.infoTop{
+    position: absolute;
+    top: 83px;
+    right: 62px;
+}
+.infoTop p{
+    padding-left: 15px;
+    width: 100px;
+    height: 37px;
+    line-height: 37px;
+    background: url("../images/online.png") no-repeat;
+    font-size: 14px;
+}
+.infoTop .list{
+    display: none;
+    /*隐藏 任何样式都消失 盒子也消失*/
+    /*visibility: hidden; 隐藏 样式虽然消失了 盒子依然存在*/
+    /*opacity: 0; 值0-1*/
+    /*透明度为0*/
+    /*filter:alpha(opacity=60); 值0-100 兼容ie浏览器*/
+    padding: 14px 0 0 14px;
+    width: 101px;
+    background: #ffffff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.infoTop .list a{
+    display: inline-block;
+    /*float: left;*/
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/online.png") no-repeat;
+}
+.infoTop .list .list1{
+    background-position: 0 -48px;
+}
+.infoTop .list .list2{
+    background-position: -25px -48px;
+}
+.infoTop .list .list3{
+    background-position: -50px -48px;
+}
+.infoTop .list .list4{
+    background-position: -75px -48px;
+}
+.infoTop .list .list5{
+    background-position: -100px -48px;
+}
+.infoTop:hover p{
+    background-position: -120px 0;
+}
+.infoTop:hover .list{
+    display: block;
+    /*
+        1、行内元素转化为块级元素
+        2、使用display：none；隐藏的元素进行显示
+    */
+}
+.info .text{
+    padding-top: 90px;
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 14px;
+}
+.info h4{
+    line-height: 35px;
+    font-size: 18px;
+    color: #fbc660;
+    background: url("../images/download.png") no-repeat 0 -30px;
+    text-indent: 30px;
+}
+.info ul{
+    overflow: hidden;
+    width: 447px;
+    height: 106px;
+    border-radius: 10px;
+}
+.info ul li{
+    float: left;
+    margin-right: 1px;
+    width: 83px;
+    height: 106px;
+    /*background: #ffffff;*/
+    text-align: center;
+}
+.info ul li a{
+    display: block;
+    padding-top: 75px;
+    height: 31px;
+    background: url("../images/pad.png") no-repeat #ffffff;
+    color: #ffffff;
+    background-color: rgba(255,255,255,.5);
+    /*opacity: 0.2;*/
+    /*是让盒子中所有的样式 都带有透明度*/
+}
+.info ul li a:hover{
+    color: #333333;
+    background-color: #e0dff3;
+}
+.info ul .ipad a{
+    /*border-top-left-radius: 6px;*/
+    background-position: -210px -183px;
+}
+.info ul .ipad a:hover{
+    background-position: 27px -183px;
+}
+.info ul .iphone a{
+    background-position: -217px 18px;
+}
+.info ul .iphone a:hover{
+    background-position: 27px 18px;
+}
+.info ul .android a{
+    background-position: -218px -84px;
+}
+.info ul .android a:hover{
+    background-position: 23px -84px;
+}
+.info ul .tv a{
+    background-position: -214px -482px;
+}
+.info ul .tv a:hover{
+    background-position: 25px -482px;
+}
+.info ul .ewm{
+    width: 110px;
+    padding-top: 14px;
+    height: 92px;
+    background: rgba(255,255,255,.7);
+}
+/*.info ul li b{
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background: url("../images/pad.png") no-repeat;
+}
+.info ul li span{
+    display: block;
+}*/
+
+@media screen and(max-width: 1024px){
+    #top{
+        position: relative;
+        height: auto;
+        background: #191d3a;
+    }
+    .logo{
+        width: 40%;
+    }
+}
+.c1:before,.c1:after,area:before{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+
